@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三洛娱乐 - 数字娱乐创新引擎</title>
+    <link rel="stylesheet" href="DreiLuo.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="index.html">三洛娱乐</a></div>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <div class="dropdown">
+                    <a href="#subsidiaries" class="dropbtn">旗下公司</a>
+                    <div class="dropdown-content">
+                        <a href="nuoyan.html">诺颜美术</a>
+                        <a href="engine.html">三洛星引擎</a>
+                        <a href="liyin.html">璃音</a>
+                    </div>
+                </div>
+                <a href="#about">关于我们</a>
+                <a href="#contact">联系我们</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>三洛娱乐</h1>
+            <p>引领数字娱乐创新，打造极致游戏体验</p>
+            <a href="#subsidiaries" class="btn">了解更多</a>
+        </div>
+    </section>
+
+    <section id="subsidiaries" class="subsidiaries">
+        <h2 class="section-title">旗下公司</h2>
+        <div class="subsidiaries-grid">
+            <a href="nuoyan.html" class="subsidiary-card">
+                <img src="Pic/NYicon.png" alt="诺颜美术">
+                <div class="subsidiary-content">
+                    <h3>诺颜美术</h3>
+                    <p>专注于PV制作和游戏3D建模，打造精品视觉体验</p>
+                </div>
+            </a>
+            <a href="engine.html" class="subsidiary-card">
+                <img src="Pic/SLXicon.png" alt="三洛星引擎">
+                <div class="subsidiary-content">
+                    <h3>三洛星引擎</h3>
+                    <p>专业的游戏开发团队，创新技术引领未来</p>
+                </div>
+            </a>
+            <a href="liyin.html" class="subsidiary-card">
+                <img src="Pic/LYicon.png" alt="璃音">
+                <div class="subsidiary-content">
+                    <h3>璃音</h3>
+                    <p>专注游戏原声制作，打造沉浸式音频体验</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>关于三洛娱乐</h2>
+                <p>三洛娱乐是一家综合性数字娱乐公司，致力于为用户提供高品质的游戏体验。我们拥有业内顶尖的游戏开发团队、艺术创作团队和音乐制作团队，通过技术创新和艺术创作的完美结合，不断推动数字娱乐产业的发展。</p>
+                <p>通过旗下诺颜美术、三洛星引擎和璃音三家专业子公司，我们能够为游戏开发提供全方位的解决方案，从游戏引擎开发到3D建模，从视觉设计到音乐制作，每一个环节都精益求精。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">联系我们</h2>
+        <div class="contact-grid">
+            <div class="contact-form">
+                <form id="contactForm" action="#" onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">主题</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言内容</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">发送消息</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>联系方式</h3>
+                <div class="contact-item">
+                    <strong>地址：</strong>
+                    <p>东营市东营区山东石油化工学院学13-135</p>
+                </div>
+                <div class="contact-item">
+                    <strong>电话：</strong>
+                    <p>17870191748</p>
+                </div>
+                <div class="contact-item">
+                    <strong>邮箱：</strong>
+                    <p>contact@sanluoent.com</p>
+                </div>
+                <div class="contact-item">
+                    <strong>工作时间：</strong>
+                    <p>周一至周五 9:00-17:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 三洛娱乐 版权所有</p>
+    </footer>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // 阻止表单默认提交行为
+            alert("感谢您的来信，我们将在3-5个工作日内联系您"); // 弹出提示框
+            window.location.href = "index.html"; // 重定向到首页
+            return false; // 阻止表单继续提交
+        }
+    </script>
+</body>
+</html>
